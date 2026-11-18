@@ -1,0 +1,70 @@
+[
+  {
+    "id": "weather_good",
+    "pattern": ["Hava", "Güzel"],
+    "template": "Hava güzel.",
+    "inference": false,
+    "note": "Yalnızca büyük harf ve noktalama düzenlendi."
+  },
+  {
+    "id": "weather_very_good",
+    "pattern": ["Hava", "Çok", "Güzel"],
+    "template": "Hava çok güzel.",
+    "inference": false,
+    "note": "Yalnızca büyük harf ve noktalama düzenlendi."
+  },
+  {
+    "id": "weather_dark",
+    "pattern": ["Hava", "Karanlık"],
+    "template": "Hava karanlık.",
+    "inference": false,
+    "note": "Yalnızca büyük harf ve noktalama düzenlendi."
+  },
+  {
+    "id": "person_sick",
+    "pattern": ["{person}", "Hasta"],
+    "slots": {"person": ["Anne", "Baba", "Çocuk", "Arkadaş", "Kardeş"]},
+    "template": "{person} hasta.",
+    "inference": false,
+    "note": "Yalnızca büyük harf ve noktalama düzenlendi."
+  },
+  {
+    "id": "person_good",
+    "pattern": ["{person}", "İyi"],
+    "slots": {"person": ["Anne", "Baba", "Çocuk", "Arkadaş", "Kardeş"]},
+    "template": "{person} iyi.",
+    "inference": false,
+    "note": "Yalnızca büyük harf ve noktalama düzenlendi."
+  },
+  {
+    "id": "person_doctor",
+    "pattern": ["{person}", "Doktor"],
+    "slots": {"person": ["Anne", "Baba", "Arkadaş", "Kardeş"]},
+    "template": "{person} doktor.",
+    "inference": false,
+    "note": "Yalnızca büyük harf ve noktalama düzenlendi."
+  },
+  {
+    "id": "past_weather_good",
+    "pattern": ["Dün", "Hava", "Güzel"],
+    "template": "Dün hava güzeldi.",
+    "inference": true,
+    "note": "'Dün' işaretinden geçmiş zaman eki çıkarıldı; uzman doğrulaması önerilir."
+  },
+  {
+    "id": "person_home_go",
+    "pattern": ["{person}", "Ev", "Gitmek"],
+    "slots": {"person": ["Anne", "Baba", "Çocuk", "Arkadaş", "Kardeş"]},
+    "template": "{person} eve gidiyor.",
+    "inference": true,
+    "note": "'Eve' yönelme eki ve 'gidiyor' zamanı öneridir; işaretlerde zaman açık olmayabilir."
+  },
+  {
+    "id": "person_home_return",
+    "pattern": ["{person}", "Ev", "Dönmek"],
+    "slots": {"person": ["Anne", "Baba", "Çocuk", "Arkadaş", "Kardeş"]},
+    "template": "{person} eve dönüyor.",
+    "inference": true,
+    "note": "'Eve' yönelme eki ve 'dönüyor' zamanı öneridir; işaretlerde zaman açık olmayabilir."
+  }
+]
